@@ -138,18 +138,28 @@ function imgTask() {
       .pipe(gulp.dest("dist/images"))
       .pipe(browsersync.stream());
   }
+
+  //Font Tasks
+  function fontTask() {
+    return gulp.src("src/fonts/**/*")
+      .pipe(gulp.dest("dist/fonts"))
+      .pipe(browsersync.stream());
+  }
+
 //Watch Files
 function watchFiles() {
     gulp.watch("./src/scss/**/*", css).on("change", browsersync.reload);
     gulp.watch(["./src/js/**/*", "!./js/**/.min.js"], js).on("change", browsersync.reload);
     gulp.watch("./src/**/*.html",HTMLTask).on("change", browsersync.reload);
     gulp.watch("./src/images/**/*", imgTask).on("change", browsersync.reload);
+    gulp.watch("./src/fonts/**/*", fontTask).on("change", browsersync.reload);
+
 
 }
 
 // Define complex tasks
 const vendor = gulp.series(clean, modules);
-const build = gulp.series(clean,vendor, gulp.parallel(css, js, HTMLTask, imgTask));
+const build = gulp.series(clean,vendor, gulp.parallel(css, js, HTMLTask, imgTask, fontTask));
 const watch = gulp.series(build, gulp.parallel(watchFiles, browserSync));
 
 // Export tasks
@@ -158,6 +168,8 @@ exports.js = js;
 exports.HTMLTask = HTMLTask;
 exports.vendor = vendor;
 exports.imgTask = imgTask;
+exports.fontTask = fontTask;
+
 exports.watch = watch;
 exports.clean = clean;
 exports.build = build;

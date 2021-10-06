@@ -4,7 +4,92 @@
  * Licensed under ISC (https://github.com/Warui-K/bykeit/bykeit/blob/master/LICENSE)
  */
 
-/*==============
-1. General CSS
-===============*/
-@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;1,400&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+html {
+  background-color: #000000;
+}
+
+body {
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden;
+  max-width: 1780px;
+  min-width: 320px;
+  font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+}
+
+.display-6 {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+.display-4 {
+  font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .display-4 {
+    font-size: 3rem;
+  }
+}
+.bd-navbar {
+  padding: 0.75rem 0;
+  background-color: #ffffff;
+}
+.bd-navbar .navbar-toggler {
+  padding: 0;
+  border: 0;
+}
+.bd-navbar .navbar-nav .nav-item {
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
+}
+.bd-navbar .navbar-nav .nav-item a {
+  color: #009FE3;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+.bd-navbar .navbar-nav .nav-item:hover, .bd-navbar .navbar-nav .nav-item:focus {
+  color: #000000;
+}
+
+/*
+   * Footer
+   */
+.site-footer {
+  position: relative;
+  line-height: 24px;
+}
+.site-footer .row {
+  border-top: 0.2px solid #000000;
+  border-bottom: 0.2px solid #000000;
+}
+.site-footer h6 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.site-footer a {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.site-footer a:hover {
+  color: #009FE3;
+}
