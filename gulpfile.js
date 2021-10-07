@@ -71,7 +71,16 @@ function modules(){
     .pipe(gulp.dest('./src/vendor/popper.js'))
     .pipe(gulp.dest('./dist/vendor/popper.js'));
 
-    return merge(bootstrap, jquery, popper, bootstrapIcons);
+    
+
+    //typedjs
+    var typedjs = gulp.src(
+        './node_modules/typed.js/lib/typed.min.js'
+    )
+    .pipe(gulp.dest('./src/vendor/typed.js'))
+    .pipe(gulp.dest('./dist/vendor/typed.js'));
+
+    return merge(bootstrap, jquery, popper, bootstrapIcons, typedjs);
 
 }
 
