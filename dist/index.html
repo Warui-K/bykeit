@@ -42,7 +42,7 @@
 <body>
   <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center bd-navbar">
   <div class="container">
-      <a href="/" class="navbar-brand d-flex w-50 me-auto"><img src="images/logos/BykeItLogo-144.png" alt="Bykeit Deliveries"></a>
+      <a href="/" class="navbar-brand d-flex w-50 me-auto"><img src="images/logos/BykeItLogo-80.png" alt="Bykeit Deliveries"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar3">
           <span class="navbar-toggler-icon"></span>
       </button>
@@ -86,22 +86,170 @@
   </div>
 </nav>
 
-    <main>
-      
-<div class="py-5 text-center text-white bg-primary">
-  <div class="container py-5">
-  <div class="row py-5">
-  <div class="mx-auto col-lg-10">
-    <h1 class="display-4 mb-4 ">This is a beautiful Bootstrap 4 Navbar with Social Media Icons </h1>
-    <p class="lead mb-5">There is nothing more rare, nor more beautiful, than a woman being unapologetically herself; comfortable in her perfect imperfection. To me, that is the true essence of beauty.  </p> <a href="#" class="btn btn-lg btn-outline-light mx-1">Take me there</a> 
-  </div>
-  </div>
-  </div>
-  </div>
-     
-      </main>
-      
+  <main>
 
+    <div class="hero">
+      <div class="container col-xl-10 col-xxl-8 px-4 py-2">
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="col-lg-7 text-center text-lg-start">
+            <h1 class="col-lg-12 display-4 fw-bold lh-1 mb-3">Tailored for your
+              <span class="typedjs"></span>
+            </h1>
+            <p class="col-lg-12 fs-4">We enable you complete business transactions by delivering mails and packages</p>
+          </div>
+          <div class="col-md-10 mx-auto col-lg-5">
+            <form class="p-4 p-md-5 border rounded-0 bg-light">
+              <div class="row g-3">
+              <div class="col-sm-12">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+              </div>
+              <div class="col-sm-6">
+                <label for="firstName">First name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+              
+  
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label for="sender" class="form-label">Contacts</label>
+                <input type="text" class="form-control" id="s-number" placeholder="Your Phone Number" required>
+                <div class="invalid-feedback">
+                  Please enter a valid number.
+                </div>
+              </div>
+            
+              <button class="w-100 btn btn-lg btn-primary" type="submit">Request Service</button>
+              <hr class="my-4">
+             </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Tabs -->
+<section id="tabs" class="tabs">
+    <div class="container">
+        <h6 class="section-title h1">Our Services</h6>
+        <div class="row">
+            <div class="col-xs-12 ">
+
+                <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="packages-tab" data-bs-toggle="tab"
+                            data-bs-target="#packages" type="button" role="tab" aria-controls="packages"
+                            aria-selected="true">Package Dispatch & Collection</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="mail-tab" data-bs-toggle="tab" data-bs-target="#mail" type="button"
+                            role="tab" aria-controls="mail" aria-selected="false">Mail Management</button>
+                    </li>
+
+                </ul>
+                <div class="tab-content px-sm-0" id="myTabContent">
+                    <div class="tab-pane fade show active" id="packages" role="tabpanel" aria-labelledby="packages-tab">
+                        <div class="container my-5">
+                            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-0 border shadow-lg">
+                                <div class="p-lg-5 pt-lg-3">
+                                    <h4 class="fw-bold lh-1 mb-3">Sending or Recieving Packages?</h4>
+                                    <p class="lead">
+                                        1.
+                                        Within the hour deliveries: Our rider picks it up within 30
+                                        minutes and has it at the drop off location within 30 minutes.</p>
+                                    <p class="lead">
+                                        2.
+                                        Scheduled deliveries: Dispatch at a scheduled
+                                        time of your choice.</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="mail" role="tabpanel" aria-labelledby="mail-tab">
+                        <div class="container my-5">
+                            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-0 border shadow-lg">
+                                <div class="p-lg-5 pt-lg-3">
+                                    <h4 class="fw-bold lh-1 mb-3">Quick Mail Services</h4>
+                                    <p class="lead">
+                                        1.
+                                        We pick up and drop off documents at designated places and where need be, our
+                                        riders will wait
+                                        for return
+                                        copies.</p>
+                                    <p class="lead">
+                                        2.
+                                        We ensure that we have a signed record that the documents were picked up and
+                                        dropped off
+                                        as
+                                        instructed, for accountability purposes.</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+</section>
+<!-- ./Tabs -->
+    <!-- feature -->
+<section id="feature" class="feature">
+    <div class="container px-4 py-0">
+        <h2 class="display-5 pb-2 border-bottom">We have full potential</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="col d-flex align-items-start">
+           
+            <div>
+              <h2><i class="bi bi-speedometer"></i> Fast</h2>
+              <p class="fs-5">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+              
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+           
+            <div>
+              <h2><i class="bi bi-file-lock"></i> Secure</h2>
+              <p class="fs-5">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+              
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            
+            <div>
+              <h2><i class="bi bi-shield-check"></i> Reliable</h2>
+              <p class="fs-5">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+<!-- ./feature -->
+
+
+  </main>
+
+  
 <div class="site-footer">
   <div class="container py-5">
   <div class="row py-5">
@@ -153,6 +301,11 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/popper.js/popper.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="vendor/typed.js/typed.min.js"></script>
+  <script src="js/main.min.js"></script>
+
+
+  
 
 
 </body>
