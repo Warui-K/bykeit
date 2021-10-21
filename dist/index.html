@@ -6,13 +6,17 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="generator" content="">
-    <title>Bykeit</title>
+    <title>Byke It</title>
     <link rel="canonical" href="">
 
     <!--Bootstrap Core CSS-->
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/bootstrap-icons/bootstrap-icons.css">
     <link rel="stylesheet" href="fonts/webfontkit-20211005-063158/fonts.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/owl.theme.default.min.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  
 
 
 
@@ -42,7 +46,7 @@
 <body>
   <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center bd-navbar">
   <div class="container">
-      <a href="/" class="navbar-brand d-flex w-50 me-auto"><img src="images/logos/BykeItLogo-80.png" alt="Bykeit Deliveries"></a>
+      <a href="/" class="navbar-brand d-flex w-50 me-auto"><img src="images/logos/BykeItLogo-80.png" alt="Byke It Deliveries"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar3">
           <span class="navbar-toggler-icon"></span>
       </button>
@@ -91,116 +95,122 @@
     <div class="hero">
       <div class="container col-xl-10 col-xxl-8 px-4 py-2">
         <div class="row align-items-center g-lg-5 py-5">
-          <div class="col-lg-7 text-center text-lg-start">
+          <div class="col-lg-12 text-center text-lg-start">
             <h1 class="col-lg-12 display-4 fw-bold lh-1 mb-3">Tailored for your
               <span class="typedjs"></span>
             </h1>
-            <p class="col-lg-12 fs-4">We enable you complete business transactions by delivering mails and packages</p>
+            <p class="col-lg-12 lead">We enable you complete business transactions by delivering mails and packages</p>
           </div>
-          <div class="col-md-10 mx-auto col-lg-5">
-            <form class="p-4 p-md-5 border rounded-0 bg-light">
-              <div class="row g-3">
-              <div class="col-sm-12">
-                <label for="email">Email address</label>
-                <input type="email" class="form-control" id="email" placeholder="name@example.com">
-              </div>
-              <div class="col-sm-6">
-                <label for="firstName">First name</label>
-                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                <div class="invalid-feedback">
-                  Valid first name is required.
-                </div>
-              </div>
-              
-  
-              <div class="col-sm-6">
-                <label for="lastName" class="form-label">Last name</label>
-                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-                <div class="invalid-feedback">
-                  Valid last name is required.
-                </div>
-              </div>
-              <div class="col-md-12">
-                <label for="sender" class="form-label">Contacts</label>
-                <input type="text" class="form-control" id="s-number" placeholder="Your Phone Number" required>
-                <div class="invalid-feedback">
-                  Please enter a valid number.
-                </div>
-              </div>
-            
-              <button class="w-100 btn btn-lg btn-primary" type="submit">Request Service</button>
-              <hr class="my-4">
-             </div>
-            </form>
-          </div>
+         
         </div>
       </div>
 
     </div>
 
-
-    <!-- Tabs -->
-<section id="tabs" class="tabs">
+    
+<!-- Tabs -->
+<section id="tabs" class="tabs shape">
     <div class="container">
-        <h6 class="section-title h1">Our Services</h6>
+        <h2 class="section-title h1">Our Services</h2>
         <div class="row">
             <div class="col-xs-12 ">
 
                 <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="packages-tab" data-bs-toggle="tab"
+                        <button class="nav-link lh-1 active" id="packages-tab" data-bs-toggle="tab"
                             data-bs-target="#packages" type="button" role="tab" aria-controls="packages"
-                            aria-selected="true">Package Dispatch & Collection</button>
+                            aria-selected="true">On Demand Package Dispatch & Collection</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="mail-tab" data-bs-toggle="tab" data-bs-target="#mail" type="button"
+                        <button class="nav-link lh-1" id="mail-tab" data-bs-toggle="tab" data-bs-target="#mail" type="button"
                             role="tab" aria-controls="mail" aria-selected="false">Mail Management</button>
                     </li>
 
                 </ul>
                 <div class="tab-content px-sm-0" id="myTabContent">
                     <div class="tab-pane fade show active" id="packages" role="tabpanel" aria-labelledby="packages-tab">
-                        <div class="container my-5">
-                            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-0 border shadow-lg">
-                                <div class="p-lg-5 pt-lg-3">
-                                    <h4 class="fw-bold lh-1 mb-3">Sending or Recieving Packages?</h4>
-                                    <p class="lead">
-                                        1.
-                                        Within the hour deliveries: Our rider picks it up within 30
-                                        minutes and has it at the drop off location within 30 minutes.</p>
-                                    <p class="lead">
-                                        2.
-                                        Scheduled deliveries: Dispatch at a scheduled
-                                        time of your choice.</p>
-
+                        <div class="row justify-content-center">
+                            <div class="col-xl-12">
+                                <div class="card border-0">
+                                    <div class="card-body p-5">
+                                        <div class="row no-gutter">
+                                            <div class="col-lg-7">
+                                                <div class="p-5">
+                                                    <h4 class="lh-1 mb-5">Sending or Recieving Packages?</h4>
+                                                    <p class="lead">
+                                                        1.
+                                                        Within the hour deliveries: Our rider picks it up within 30
+                                                        minutes and has it at the drop off location within 30 minutes.</p>
+                                                    <p class="lead">
+                                                        2.
+                                                        Scheduled deliveries: Dispatch at a scheduled
+                                                        time of your choice.</p>
+                
+                                                </div>
+                                            </div>
+                    
+                                            <div class="col-lg-5 p-0 d-none d-lg-inline-block">
+                                                <div class="img-block img-block-1 rounded-right">
+                                                    <div class="overlay rounded-right"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                    </div>
+                                    <!-- end card-body -->
                                 </div>
-
+                                <!-- end card -->
+                    
+                    
+                                <!-- end row -->
+                    
                             </div>
+                            <!-- end col -->
                         </div>
+              
 
                     </div>
                     <div class="tab-pane fade" id="mail" role="tabpanel" aria-labelledby="mail-tab">
-                        <div class="container my-5">
-                            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-0 border shadow-lg">
-                                <div class="p-lg-5 pt-lg-3">
-                                    <h4 class="fw-bold lh-1 mb-3">Quick Mail Services</h4>
-                                    <p class="lead">
-                                        1.
-                                        We pick up and drop off documents at designated places and where need be, our
-                                        riders will wait
-                                        for return
-                                        copies.</p>
-                                    <p class="lead">
-                                        2.
-                                        We ensure that we have a signed record that the documents were picked up and
-                                        dropped off
-                                        as
-                                        instructed, for accountability purposes.</p>
-
+                        <div class="row justify-content-center">
+                            <div class="col-xl-12">
+                                <div class="card border-0">
+                                    <div class="card-body p-5">
+                                        <div class="row no-gutter">
+                                            <div class="col-lg-7">
+                                                <div class="p-5">
+                                                    <h4 class="lh-1 mb-5">Quick Mail Services</h4>
+                                                    <p class="lead">
+                                                        1.
+                                                        We pick up and drop off documents at designated points.</p>
+                                                    <p class="lead">
+                                                        2.
+                                                        We ensure that we have a signed record that the documents were picked up and
+                                                        dropped off
+                                                        as
+                                                        instructed, for accountability purposes.</p>
+                
+                                                </div>
+                                            </div>
+                    
+                                            <div class="col-lg-5 p-0 d-none d-lg-inline-block">
+                                                <div class="img-block img-block-2 rounded-right">
+                                                    <div class="overlay rounded-right"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                    </div>
+                                    <!-- end card-body -->
                                 </div>
-
+                                <!-- end card -->
+                    
+                    
+                                <!-- end row -->
+                    
                             </div>
+                            <!-- end col -->
                         </div>
+                     
                     </div>
 
                 </div>
@@ -212,50 +222,238 @@
     </div>
 </section>
 <!-- ./Tabs -->
-    <!-- feature -->
-<section id="feature" class="feature">
+
+    <section class="how-it-works">
     <div class="container px-4 py-0">
-        <h2 class="display-5 pb-2 border-bottom">We have full potential</h2>
+        <div class="row text-center justify-content-center mb-5">
+            <div class="col-xl-6 col-lg-8">
+                <h2 class="display-5 pb-2 border-bottom">How it works</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-content" data-toggle="popover" data-trigger="hover" data-placement="top"
+                            title="Prepare" data-content="Prepare your package and secure it shut."
+                            data-original-title="Prepare">
+                            <div class="inner-circle"></div>
+                            <p class="h4 mt-3 mb-1">Prepare</p>
+                            <p class="h6 mb-0 mb-lg-0">Prepare your package and secure it shut.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-content" data-toggle="popover" data-trigger="hover" data-placement="top"
+                            title="Request service" data-content="To deliver your package/mail."
+                            data-original-title="Request service">
+                            <div class="inner-circle"></div>
+                            <p class="h4 mt-3 mb-1">Request service</p>
+                            <p class="h6 mb-0 mb-lg-0">To deliver your package/mail.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-content" data-toggle="popover" data-trigger="hover" data-placement="top"
+                            title="Pickup" data-content="Byke It rider picks package/mail at pickup location."
+                            data-original-title="Pickup">
+                            <div class="inner-circle"></div>
+                            <p class="h4 mt-3 mb-1">Pickup</p>
+                            <p class="h6 mb-0 mb-lg-0">Byke It rider picks package/mail at pickup location.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-content" data-toggle="popover" data-trigger="hover" data-placement="top"
+                            title="Delivery" data-content="Byke It rider delivers to the drop off point/address."
+                            data-original-title="Delivery">
+                            <div class="inner-circle"></div>
+                            <p class="h4 mt-3 mb-1">Delivery</p>
+                            <p class="h6 mb-0 mb-lg-0">Byke It rider delivers to the drop off point/address.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-content" data-toggle="popover" data-trigger="hover" data-placement="top"
+                            title="Billing & Payment" data-content="Either at the pickup address or drop off point."
+                            data-original-title="Billing & Payment">
+                            <div class="inner-circle"></div>
+                            <p class="h4 mt-3 mb-1">Billing & Payment</p>
+                            <p class="h6 mb-0 mb-lg-0">Either at the pickup address or drop off point.</p>
+                        </div>
+                    </div>
+                    <div class="step mb-0">
+                        <div class="step-content" data-toggle="popover" data-trigger="hover" data-placement="top"
+                            title="Repeat" data-content="Over and over again."
+                            data-original-title="Repeat">
+                            <div class="inner-circle"></div>
+                            <p class="h4 mt-3 mb-1">Repeat</p>
+                            <p class="h6 mb-0 mb-lg-0">Over and over again.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <div class="container col-xxl-8 px-4 py-5">
+    <div class="col-xl-6 col-lg-8">
+        <h2 class="h1 border-bottom">Request Delivery</h2>
+        <p class="display-6">You can now request for a rider directly, either via WhatsApp or you can fill in the form.
+        </p>
+    </div>
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+
+      <div class="col-lg-4">
+        <div class="contact-name">
+            <h5>Mail</h5>
+            <p>request@bykeit.co.ke</p>
+        </div>
+        <div class="contact-name">
+            <h5>Phone</h5>
+            <p>+254 705719718</p>
+        </div>
+        <div class="contact-name">
+            <h5>Order via WhatsApp</h5>
+            <p>+254 705719718</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-lg-8">
+        <form class="needs-validation" id="address-form" action="" method="get" novalidate autocomplete="off">
+            <div class="returnmessage valid-feedback p-15px-b" data-success="Your message has been received, We will contact you soon."></div>
+            <div class="empty_notice invalid-feedback p-15px-b"><span>Please Fill Required Fields</span></div>
+            <div class="row g-3">
+                <div class="col-6">
+                    <label for="sender-name" class="form-label">Sender Name</label>
+                    <input type="text" class="form-control" id="sender-name" placeholder="Sender Name" value=""
+                        required>
+                    <div class="invalid-feedback">
+                        Valid name is required.
+                    </div>
+                </div>
+                <div class="col-6">
+                    <label for="sender-phone-number" class="form-label">Sender Phone Number</label>
+                    <input type="text" class="form-control" id="sender-phone-number" placeholder="+254701234567"
+                        value="" required>
+                    <div class="invalid-feedback">
+                        Valid number is required.
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <label for="pickup-point" class="form-label">Pickup Point (Search Location in
+                        Nairobi)</label>
+                        
+                    <div class="input-group has-validation">
+                        <input type="text" class="form-control"  id="location"
+                        name="ship-address"
+                        required
+                        autocomplete="off"/>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <label for="drop-off-point" class="form-label">Drop-off Point (Search Location in
+                        Nairobi)</label>
+                    <div class="input-group has-validation">
+                        <input type="text" class="form-control" id="location"
+                        name="ship-address"
+                        required
+                        autocomplete="off"/>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <label for="receiver-name" class="form-label">Receiver Name</label>
+                    <input type="text" class="form-control" id="receiver-name" placeholder="Receiver Name" value=""
+                        required>
+                    <div class="invalid-feedback">
+                        Valid name is required.
+                    </div>
+                </div>
+                <div class="col-6">
+                    <label for="receiver-phone-number" class="form-label">Receiver Phone Number</label>
+                    <input type="text" class="form-control" id="receiver-phone-number" placeholder="+254701234567"
+                        value="" required>
+                    <div class="invalid-feedback">
+                        Valid number is required.
+                    </div>
+                </div>
+                <hr class="my-3">
+                <div class="send">
+                    <a id="send_message" class="px-btn theme" href="#"><span>Request Service</span> <i class="arrow"></i></a>
+                </div>
+            </div>
+
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!--   <div class="card-container">
+    <div class="panel">
+      <div>
+        <img class="sb-title-icon" src="https://fonts.gstatic.com/s/i/googlematerialicons/location_pin/v5/24px.svg" alt="">
+        <span class="sb-title">Address Selection</span>
+      </div>
+      <input type="text" placeholder="Address" id="location"/>
+      <input type="text" placeholder="Apt, Suite, etc (optional)"/>
+      <input type="text" placeholder="City" id="locality"/>
+      <div class="half-input-container">
+        <input type="text" class="half-input" placeholder="State/Province" id="administrative_area_level_1"/>
+        <input type="text" class="half-input" placeholder="Zip/Postal code" id="postal_code"/>
+      </div>
+      <input type="text" placeholder="Country" id="country"/>
+      <button class="button-cta">Checkout</button>
+    </div>
+    <div class="map" id="map"></div>
+  </div>
+ -->
+
+
+    <!-- feature -->
+<section class="feature">
+    <div class="container px-4 py-0">
+        <h2 class="display-5 pb-2 border-bottom">We have it all</h2>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
           <div class="col d-flex align-items-start">
-           
             <div>
-              <h2><i class="bi bi-speedometer"></i> Fast</h2>
-              <p class="fs-5">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-              
+              <h2><i class="bi bi-speedometer"></i> Quick</h2>
+                 <p class="lead">Our riders are trained professionally to be quick and drive like pros with safety, and attention to detail.</p>
             </div>
           </div>
           <div class="col d-flex align-items-start">
-           
             <div>
-              <h2><i class="bi bi-file-lock"></i> Secure</h2>
-              <p class="fs-5">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-              
+              <h2><i class="bi bi-file-lock"></i> Private & Secure</h2>
+                 <p class="lead">You package is safe, secure and private with us.</p>
             </div>
           </div>
           <div class="col d-flex align-items-start">
-            
             <div>
               <h2><i class="bi bi-shield-check"></i> Reliable</h2>
-              <p class="fs-5">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-              
+                 <p class="lead">We are sufficiently experienced safe drivers. You can be certain your request will be acted on as instructed </p>
             </div>
           </div>
         </div>
       </div>
 </section>
+
+
 <!-- ./feature -->
+
 
 
   </main>
 
+  <section class="footer">
   
-<div class="site-footer">
   <div class="container py-5">
   <div class="row py-5">
     
     <div class="col-12 col-md">
-      <img class="mb-2" src="images/logos/BykeItLogo-80.png" alt="Bykeit Deliveries">
+      <img class="mb-2" src="images/logos/BykeItLogo-80.png" alt="Byke It Deliveries">
      
     </div>
     <div class="col-6 col-md">
@@ -280,13 +478,13 @@
       <ul class="list-unstyled text-small">
         <li class="mb-1"><a class="link-secondary text-decoration-none" href="#"><i class="bi bi-geo-alt-fill"></i> Room 501, 5th Floor Suraj Plaza, Limuru Road, Nairobi</a></li>
         <li class="mb-1"><a class="link-secondary text-decoration-none" href="#"><i class="bi bi-telephone-fill"></i> 0717925842, 0705719718</a></li>
-        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#"><i class="bi bi-envelope-open"></i> bykeitdeliveries@gmail.com</a></li>
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#"><i class="bi bi-envelope-open"></i> Byke Itdeliveries@gmail.com</a></li>
        
       </ul>
     </div>
   </div>
   <footer class="pt-5 text-muted text-center text-small">
-    <p class="mb-1">&copy; 2021 Bykeit Deliveries</p>
+    <p class="mb-1">&copy; 2021 Byke It Deliveries</p>
     <ul class="list-inline">
       <li class="list-inline-item"><a href="#">Privacy</a></li>
       <li class="list-inline-item"><a href="#">Terms</a></li>
@@ -295,13 +493,14 @@
   </footer>
 </div>
 
-</div>
-
+</section>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChngF-bpwk14iMjIUFITtv9EuTB13GhHc&libraries=places&callback=initMap&channel=GMPSB_addressselection_v1_cABC" async defer></script>
 
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/popper.js/popper.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
   <script src="vendor/typed.js/typed.min.js"></script>
+  <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
   <script src="js/main.min.js"></script>
 
 

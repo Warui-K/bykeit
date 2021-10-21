@@ -80,7 +80,25 @@ function modules(){
     .pipe(gulp.dest('./src/vendor/typed.js'))
     .pipe(gulp.dest('./dist/vendor/typed.js'));
 
-    return merge(bootstrap, jquery, popper, bootstrapIcons, typedjs);
+    //OwlCarousel CSS 1
+    var oc1 = gulp.src(
+        './src/vendor/owlcarousel/css/owl.carousel.min.css'
+    )
+    .pipe(gulp.dest('./dist/vendor/owlcarousel'));
+
+    //OwlCarousel CSS 2
+    var oc2 = gulp.src(
+        './src/vendor/owlcarousel/css/owl.theme.default.min.css'
+    )
+    .pipe(gulp.dest('./dist/vendor/owlcarousel'));
+
+    //OwlCarousel Js
+    var ocjs = gulp.src(
+        './src/vendor/owlcarousel/js/owl.carousel.min.js'
+    )
+    .pipe(gulp.dest('./dist/vendor/owlcarousel'));
+
+    return merge(bootstrap, jquery, popper, bootstrapIcons, typedjs, oc1, oc2, ocjs);
 
 }
 
