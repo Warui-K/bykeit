@@ -1,31 +1,19 @@
-<div class="container col-xxl-8 px-4 py-5">
-    <div class="col-xl-6 col-lg-8">
-        <h2 class="h1 border-bottom">Request Delivery</h2>
-        <p class="display-6">You can now request for a rider directly, either via WhatsApp or you can fill in the form.
-        </p>
-    </div>
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+<section class="request-delivery" id="request-delivery">
+    <div class="container px-4 py-0">
+        <div class="row text-center justify-content-center mb-5">
+            <div class="col-xl-6 col-lg-8">
+                <h2 class="display-5"><span>Request Delivery</span></h2>
+            </div>
+        </div>
 
-      <div class="col-lg-4">
-        <div class="contact-name">
-            <h5>Mail</h5>
-            <p>request@bykeit.co.ke</p>
-        </div>
-        <div class="contact-name">
-            <h5>Phone</h5>
-            <p>+254 705719718</p>
-        </div>
-        <div class="contact-name">
-            <h5>Order via WhatsApp</h5>
-            <p>+254 705719718</p>
-        </div>
-      </div>
-      <div class="col-12 col-sm-12 col-lg-8">
+    <div class="row align-items-center g-5 py-5">
+
+      <div class="col-12">
         <form class="needs-validation" id="address-form" action="" method="get" novalidate autocomplete="off">
             <div class="returnmessage valid-feedback p-15px-b" data-success="Your message has been received, We will contact you soon."></div>
             <div class="empty_notice invalid-feedback p-15px-b"><span>Please Fill Required Fields</span></div>
             <div class="row g-3">
-                <div class="col-6">
+                <div class="col-lg-6 col-md-12">
                     <label for="sender-name" class="form-label">Sender Name</label>
                     <input type="text" class="form-control" id="sender-name" placeholder="Sender Name" value=""
                         required>
@@ -33,7 +21,7 @@
                         Valid name is required.
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6 col-md-12">
                     <label for="sender-phone-number" class="form-label">Sender Phone Number</label>
                     <input type="text" class="form-control" id="sender-phone-number" placeholder="+254701234567"
                         value="" required>
@@ -65,7 +53,7 @@
                     </div>
                 </div>
 
-                <div class="col-6">
+                <div class="col-lg-6 col-md-12">
                     <label for="receiver-name" class="form-label">Receiver Name</label>
                     <input type="text" class="form-control" id="receiver-name" placeholder="Receiver Name" value=""
                         required>
@@ -73,7 +61,7 @@
                         Valid name is required.
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6 col-md-12">
                     <label for="receiver-phone-number" class="form-label">Receiver Phone Number</label>
                     <input type="text" class="form-control" id="receiver-phone-number" placeholder="+254701234567"
                         value="" required>
@@ -81,9 +69,17 @@
                         Valid number is required.
                     </div>
                 </div>
-                <hr class="my-3">
+  
+
+                <div class="form-group">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"> I accept the terms and conditions of service
+                      </label>
+                    </div>
+                  </div>
                 <div class="send">
-                    <a id="send_message" class="px-btn theme" href="#"><span>Request Service</span> <i class="arrow"></i></a>
+                    <a id="send_message" class="btn" href="#"> <i class="fas fa-arrow-right"></i> Request Service</a>
                 </div>
             </div>
 
@@ -91,25 +87,5 @@
         </div>
       </div>
     </div>
-  </div>
+</section>
 
-
-<!--   <div class="card-container">
-    <div class="panel">
-      <div>
-        <img class="sb-title-icon" src="https://fonts.gstatic.com/s/i/googlematerialicons/location_pin/v5/24px.svg" alt="">
-        <span class="sb-title">Address Selection</span>
-      </div>
-      <input type="text" placeholder="Address" id="location"/>
-      <input type="text" placeholder="Apt, Suite, etc (optional)"/>
-      <input type="text" placeholder="City" id="locality"/>
-      <div class="half-input-container">
-        <input type="text" class="half-input" placeholder="State/Province" id="administrative_area_level_1"/>
-        <input type="text" class="half-input" placeholder="Zip/Postal code" id="postal_code"/>
-      </div>
-      <input type="text" placeholder="Country" id="country"/>
-      <button class="button-cta">Checkout</button>
-    </div>
-    <div class="map" id="map"></div>
-  </div>
- -->

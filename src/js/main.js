@@ -8,47 +8,6 @@ var typed = new Typed('.typedjs', {
                           "backDelay": 2500
 });
 
-$(document).ready(function(){
-
-    if($('.brands_slider').length)
-    {
-    var brandsSlider = $('.brands_slider');
-    
-    brandsSlider.owlCarousel(
-    {
-    loop:true,
-    autoplay:true,
-    autoplayTimeout:5000,
-    nav:false,
-    dots:false,
-    autoWidth:true,
-    items:8,
-    margin:42
-    });
-    
-    if($('.brands_prev').length)
-    {
-    var prev = $('.brands_prev');
-    prev.on('click', function()
-    {
-    brandsSlider.trigger('prev.owl.carousel');
-    });
-    }
-    
-    if($('.brands_next').length)
-    {
-    var next = $('.brands_next');
-    next.on('click', function()
-    {
-    brandsSlider.trigger('next.owl.carousel');
-    });
-    }
-    }
-    
-    
-    });
-
-
 function initMap() {
   const componentForm = [
     'location',
@@ -117,3 +76,20 @@ function initMap() {
     marker.setVisible(true);
   }
 }
+
+// Initialize and add the map
+function initMap() {
+  // The location of suraj
+  const suraj = { lat: -1.26793, lng: 36.82234 };
+  // The map, centered at suraj
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 15,
+    center: suraj,
+  });
+  // The marker, positioned at suraj
+  const marker = new google.maps.Marker({
+    position: suraj,
+    map: map,
+  });
+}
+
