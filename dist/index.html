@@ -16,10 +16,8 @@
     <link rel="stylesheet" href="fonts/webfontkit-20211005-063158/fonts.css">
   
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-  
 
-
-
+   
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
@@ -39,14 +37,14 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 
 </head>
 
 <body>
   <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center bd-navbar">
     <div class="container">
-        <a href="/" class="navbar-brand d-flex w-50 me-auto"><img src="images/logos/BykeItLogo-80.png"
+        <a href="index.html" class="navbar-brand d-flex w-50 me-auto"><img src="images/logos/BykeItLogo-80.png"
                 alt="Byke It Deliveries"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar3">
             <span class="navbar-toggler-icon"></span>
@@ -55,21 +53,26 @@
             <ul class="navbar-nav w-100 justify-content-center">
 
                 <li class="nav-item">
-                    <a class="nav-link px-2" href="/services.html">Services</a>
+                    <a class="nav-link px-2" href="services.html">Services</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link px-2" href="/about.html">About</a>
+                    <a class="nav-link px-2" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-2" href="/contact.html">Contact</a>
+                    <a class="nav-link px-2" href="contact.html">Contact</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
                 <li>
-                    <a class="nav-link" href="#" target="_blank"> <button type="button" class="btn btn-social btn-whatsapp">
-                            <i class="fab fa-whatsapp"></i>
-                        </button></i></a>
+                    <a class="nav-link btn btn-social btn-whatsapp display-6" href="#" target="_blank"
+                        onclick="whatsappURL()"> <i class="fab fa-whatsapp"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link btn btn-social btn-twitter display-6" href="tel: +254705719718" target="_blank">
+                        <i class="fas fa-phone-alt"></i>
+                    </a>
                 </li>
 
 
@@ -85,16 +88,17 @@
         <div class="row align-items-center g-lg-5 py-5">
           <div class="col-md-12 align-self-center">
             <h1 class="display-4 fw-bold lh-1 mb-3">Tailored for your
-              <span class="typedjs"></span></h1>
+              <span class="typedjs"></span>
+            </h1>
             <p class="display-6">We enable you complete business transactions by delivering mails and packages</p>
           </div><!-- /.col-md-6 -->
-  
+
           <div class="d-flex flex-column flex-md-row">
             <a href="#request-delivery" class="btn btn-lg btn-primary mb-3 me-md-3">Request Service</a>
-         
+
           </div>
 
-         
+
         </div>
       </div>
 
@@ -216,7 +220,6 @@
     </div>
 </section>
 <!-- ./Tabs -->
-
     <section class="how-it-works">
     <div class="container px-4 py-0">
         <div class="row text-center justify-content-center mb-5">
@@ -290,99 +293,165 @@
     </div>
 </section>
 
-    <section class="request-delivery" id="request-delivery">
-    <div class="container px-4 py-0">
-        <div class="row text-center justify-content-center mb-5">
-            <div class="col-xl-6 col-lg-8">
-                <h2 class="display-5"><span>Request Delivery</span></h2>
-            </div>
-        </div>
+ 
+    <!--Section: Contact v.1-->
+<section class="request-delivery pb-5" id="request-delivery">
+    <div class="row text-center justify-content-center mb-5">
 
-    <div class="row align-items-center g-5 py-5">
+        <h2 class="display-5"><span>Request Delivery</span></h2>
 
-      <div class="col-12">
-        <form class="needs-validation" id="address-form" action="" method="get" novalidate autocomplete="off">
-            <div class="returnmessage valid-feedback p-15px-b" data-success="Your message has been received, We will contact you soon."></div>
-            <div class="empty_notice invalid-feedback p-15px-b"><span>Please Fill Required Fields</span></div>
-            <div class="row g-3">
-                <div class="col-lg-6 col-md-12">
-                    <label for="sender-name" class="form-label">Sender Name</label>
-                    <input type="text" class="form-control" id="sender-name" placeholder="Sender Name" value=""
-                        required>
-                    <div class="invalid-feedback">
-                        Valid name is required.
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12">
-                    <label for="sender-phone-number" class="form-label">Sender Phone Number</label>
-                    <input type="text" class="form-control" id="sender-phone-number" placeholder="+254701234567"
-                        value="" required>
-                    <div class="invalid-feedback">
-                        Valid number is required.
-                    </div>
-                </div>
-
-                <div class="col-12">
-                    <label for="pickup-point" class="form-label">Pickup Point (Search Location in
-                        Nairobi)</label>
-                        
-                    <div class="input-group has-validation">
-                        <input type="text" class="form-control"  id="location"
-                        name="ship-address"
-                        required
-                        autocomplete="off"/>
-                    </div>
-                </div>
-
-                <div class="col-12">
-                    <label for="drop-off-point" class="form-label">Drop-off Point (Search Location in
-                        Nairobi)</label>
-                    <div class="input-group has-validation">
-                        <input type="text" class="form-control" id="location"
-                        name="ship-address"
-                        required
-                        autocomplete="off"/>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-12">
-                    <label for="receiver-name" class="form-label">Receiver Name</label>
-                    <input type="text" class="form-control" id="receiver-name" placeholder="Receiver Name" value=""
-                        required>
-                    <div class="invalid-feedback">
-                        Valid name is required.
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12">
-                    <label for="receiver-phone-number" class="form-label">Receiver Phone Number</label>
-                    <input type="text" class="form-control" id="receiver-phone-number" placeholder="+254701234567"
-                        value="" required>
-                    <div class="invalid-feedback">
-                        Valid number is required.
-                    </div>
-                </div>
-  
-
-                <div class="form-group">
-                    <div class="form-check">
-                      <label class="form-check-label">
-                        <input class="form-check-input" type="checkbox"> I accept the terms and conditions of service
-                      </label>
-                    </div>
-                  </div>
-                <div class="send">
-                    <a id="send_message" class="btn" href="#"> <i class="fas fa-arrow-right"></i> Request Service</a>
-                </div>
-            </div>
-
-        </form>
-        </div>
-      </div>
     </div>
+
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-lg-8 mb-4">
+<div class="card"><div class="card-body">
+            <!--Form with header-->
+
+            <!--Header-->
+
+            <form id="delivery-form" name="deliveryForm" onsubmit="generateURL()" method="get" needs-validation>
+
+                <div class="row g-3">
+
+                    <div class="col-12">
+                        <label for="pickup-point" class="form-label"><i class="far fa-dot-circle"></i>
+                            Pickup Point (Search Location in
+                            Nairobi)*</label>
+
+                        <input type="text" class="form-control" id="pick-address" name="pick-address" required
+                            autocomplete="off" />
+
+
+                    </div>
+
+                    <div class="col-12">
+                        <label for="drop-off-point" class="form-label"><i class="fas fa-map-marker-alt"></i>
+                            Drop-off Point (Search Location in
+                            Nairobi)*</label>
+
+                        <input type="text" class="form-control" id="ship-address" name="ship-address" required
+                            autocomplete="off" />
+
+
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div id="mode-selector" hidden="true">
+                                <input id="changemode-walking" type="radio" value="WALKING">
+                                <input id="changemode-transit" type="radio" value="TRANSIT">
+                                <input id="changemode-driving" type="radio" value="DRIVING" checked>
+                            </div>
+                            <div id="total"></div>
+                            <div id="map">
+                                <h5 style="text-align:center; margin-top: 70px;">Loading
+                                    locations...Please wait</h5>
+                            </div>
+                            <div>
+                            <input style=" width:100%;  border: none !important;"  id="distance" class="h3" name="distance" value=""
+                                placeholder="Please enter location to see cost" readonly required><br>
+                            </div>
+                            <input style="color:#4422bf; width:100%;  border: none !important;" id="cost_B" name="CostB" placeholder="" value="" readonly required>
+                            <a style="text-align: center;" href="javascript:window.location.reload(true)"
+                                hidden=""><span>Reload
+                                    Locations</span></a>
+                           
+                            <div>
+                                <input id="no_selection" name="
+                                No_selection" value="" placeholder="Bicycle Or Motorbike" readonly required hidden="">
+                            </div>
+                            <div>
+                                <input id="location_1" name="Pickup_address" value=""
+                                    placeholder="Enter location in the map" readonly required hidden="">
+                            </div>
+                            <div>
+                                <input id="location_2" name="Delivery_address" value="" type="text"
+                                    placeholder="Enter location in the map" readonly required hidden="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <label for="sender-name" class="form-label">Sender Name</label>
+                        <input type="text" class="form-control" id="sender-name" placeholder="Sender Name" value=""
+                            required>
+            
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <label for="sender-phone-number" class="form-label">Sender Phone Number</label>
+                        <input type="text" class="form-control" id="sender-contact" placeholder="+254701234567" value=""
+                            required>
+                       
+                    </div>
+
+
+                    <div class="col-lg-6 col-md-12">
+                        <label for="receiver-name" class="form-label">Receiver Name</label>
+                        <input type="text" class="form-control" id="receiver-name" placeholder="Receiver Name" value=""
+                            required>
+                        
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <label for="receiver-phone-number" class="form-label">Receiver Phone Number</label>
+                        <input type="text" class="form-control" id="receiver-contact" placeholder="+254701234567"
+                            value="" required>
+                      
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="message">Special Instructions</label>
+                            <textarea class="form-control" id="instructions" rows="3"
+                                placeholder="Any special instructions?"></textarea>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" required> I accept the terms and
+                                conditions
+                                of service
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="send">
+                        <input type="submit" value="Request via WhatsApp" class="btn btn-whatsapp">
+                    </div>
+
+                </div>
+
+
+            </form>
+
+        </div></div>
+            <!--Form with header-->
+
+        </div>
+        <!--Grid column-->
+        <div class="col-lg-4 mb-4">
+            <div class="container px-4 py-0">
+                <h2 class="display-5">Call to order</h2>
+                <div class="col-12 text-center justify-content-center">
+                 
+                  <div class="py-5">
+          
+                        <a href="tel: +254705719718" class="btn btn-lg btn-primary mb-3 me-md-3" target="_blank">+254 705719718</a>
+              
+                   
+                  </div>
+                </div>
+        </div>
+
+
+
+    </div>
+
 </section>
-
-
-
+<!--Section: Contact v.1-->
         <!-- feature -->
     <section class="feature">
 
@@ -415,31 +484,50 @@
     </section>
     
     <!-- ./feature -->
-    <section class="go-further">
+    <section class="home-newsletter">
+  <div class="container px-4 py-0">
+    <h2 class="display-5"><span>Subscribe to our Newsletter</span></h2>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="single">
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Enter your email">
+            <span class="input-group-btn">
+              <button class="btn-theme" type="submit"><i class="fas fa-arrow-right"></i> Subscribe</button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="go-further">
   <div class="container px-4 py-0">
     <h2 class="display-5"><span>Go further with Byke It Deliveries</span></h2>
     <div class="col-12 text-center justify-content-center">
       <p class="h4 mb-0 mb-lg-0">We want to serve more businesses and corporates.
       </p>
-      <p class="h4 mb-0 mb-lg-0">  You can contact us on our social media pages or <a href="/contact">Send us a message. </a> </p>
+      <p class="h4 mb-0 mb-lg-0"> You can contact us on our social media pages or <a href="contact.html">Send us a message.
+        </a> </p>
       <div class="py-5">
-        <a href="#" target="_blank" class="btn-social btn-whatsapp"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://www.facebook.com/bykeitdeliveries/" target="_blank" class="btn-social btn-facebook"><i class="fa fa-facebook"></i></a>
-        <a href="https://www.instagram.com/bykeitdeliveries/" target="_blank" class="btn-social btn-instagram"><i class="fa fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/company/byke-it-deliveries/" target="_blank" class="btn-social btn-linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="#" target="_blank" class="btn-social btn-whatsapp" onclick="whatsappURL()"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com/bykeitdeliveries/" target="_blank" class="btn-social btn-facebook"><i
+            class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/bykeitdeliveries/" target="_blank" class="btn-social btn-instagram"><i
+            class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/byke-it-deliveries/" target="_blank"
+          class="btn-social btn-linkedin"><i class="fa fa-linkedin"></i></a>
         <a href="#" target="_blank" class="btn-social btn-twitter"><i class="fa fa-twitter"></i></a>
-        <a href="mailto: bykeitdeliveries.com" target="_blank" class="btn-social btn-email"><i class="fa fa-envelope"></i></a>
+        <a href="mailto: bykeitdeliveries.com" target="_blank" class="btn-social btn-email"><i
+            class="fa fa-envelope"></i></a>
+      </div>
     </div>
-  </div>
 
 </section>
-
-
-
-
-    
   </main>
-
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChngF-bpwk14iMjIUFITtv9EuTB13GhHc&callback=initAutocomplete&libraries=places&v=weekly"
+  async></script>
   <section class="footer">
 
   <div class="container">
@@ -482,15 +570,12 @@
   </div>
 
 </section>
-<script
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChngF-bpwk14iMjIUFITtv9EuTB13GhHc&libraries=places&callback=initMap&channel=GMPSB_addressselection_v1_cABC"
-  async defer></script>
 
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/popper.js/popper.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="vendor/typed.js/typed.min.js"></script>
-
+<script src="js/gmaps.min.js"></script>
 <script src="js/main.min.js"></script>
 
 </body>
